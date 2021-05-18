@@ -1,27 +1,28 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {Params} from './params';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'BrightBoxFrontEnd';
+    title = 'BrightBoxFrontEnd';
 
-  client: Params[] = [];
-  clientname = '';
-  firmname = '';
-  adress = '';
-  city = '';
+    client: Params[] = [];
+    clientname = '';
+    firmname = '';
+    adress = '';
+    city = '';
 
-  phone = '';
-  email = '';
-  ic = '';
-  dic = '';
+    phone = '';
+    email = '';
+    ic = '';
+    dic = '';
 
-  months = '';
+    months = '';
 
-  
-
+    reprezentant = '';
+    emailreprezentant = '';
+    phonereprezentant = '';
 }

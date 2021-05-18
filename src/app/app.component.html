@@ -4,20 +4,20 @@
 
 <div id="global">
   <div class="input-group">
-    <input id="Jméno klienta" name="Id" type="text" class="form-control" [(ngModel)]="id" placeholder="Jméno klienta">
-    <input id="Název firmy" name="Name" type="text" class="form-control" [(ngModel)]="name" placeholder="Název firmy*">
-    <input id="Ulice a ČP" name="Price" type="text" class="form-control" [(ngModel)]="price" placeholder="Ulice a ČP">
-    <input id="Město a PSČ" name="Studio" type="text" class="form-control" [(ngModel)]="studio"
+    <input id="Jméno klienta" name="Id" type="text" class="form-control" [(ngModel)]="clientname" placeholder="Jméno klienta">
+    <input id="Název firmy" name="Name" type="text" class="form-control" [(ngModel)]="firmname" placeholder="Název firmy*">
+    <input id="Ulice a ČP" name="Price" type="text" class="form-control" [(ngModel)]="adress" placeholder="Ulice a ČP">
+    <input id="Město a PSČ" name="Studio" type="text" class="form-control" [(ngModel)]="city"
            placeholder="Město a PSČ"><br></div>
     <div class="input-group">
-    <input id="Telefon" name="Id" type="text" class="form-control" [(ngModel)]="id" placeholder="Telefon">
-    <input id="Email" name="Name" type="text" class="form-control" [(ngModel)]="name" placeholder="E-mail*">
-    <input id="IČ" name="Price" type="text" class="form-control" [(ngModel)]="price" placeholder="IČ">
-    <input id="DIČ" name="Studio" type="text" class="form-control" [(ngModel)]="studio" placeholder="DIČ">
+    <input id="Telefon" name="Id" type="text" class="form-control" [(ngModel)]="phone" placeholder="Telefon">
+    <input id="Email" name="Name" type="text" class="form-control" [(ngModel)]="email" placeholder="E-mail*">
+    <input id="IČ" name="Price" type="text" class="form-control" [(ngModel)]="ic" placeholder="IČ">
+    <input id="DIČ" name="Studio" type="text" class="form-control" [(ngModel)]="dic" placeholder="DIČ">
   </div>
   <br>
   <div class="input-group">
-    <input id="Počet měsíců" name="Id" type="text" class="form-control" style="width: 30%" [(ngModel)]="id"
+    <input id="Počet měsíců" name="Id" type="text" class="form-control" style="width: 30%" [(ngModel)]="months"
            placeholder="Počet měsíců: ">
   </div>
 
@@ -96,7 +96,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="heureka" name="Glami">
+        <input type="checkbox" id="heureka" name="heureka">
       </td>
     </tr>
     <tr>
@@ -140,7 +140,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
     <tr>
@@ -158,7 +158,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
   </table>
@@ -180,7 +180,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
     <tr>
@@ -189,7 +189,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
     <tr>
@@ -198,7 +198,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
     <tr>
@@ -207,7 +207,7 @@
       <td> Kč</td>
       <td> Kč</td>
       <td>
-        <input type="checkbox" id="" name="heureka">
+        <input type="checkbox"  name="heureka">
       </td>
     </tr>
   </table>
@@ -273,9 +273,9 @@
 
   <h1></h1>
 
-  <input id="Zástupce" name="Name" type="text" [(ngModel)]="name" placeholder="Jméno obchodního zástupce*">
-  <input name="Email" type="text" [(ngModel)]="price" placeholder="Email">
-  <input name="Telefon" type="text" [(ngModel)]="studio" placeholder="Telefon">
+  <input id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant" placeholder="Jméno obchodního zástupce*">
+  <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
+  <input name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
 
   <h1></h1>
 
