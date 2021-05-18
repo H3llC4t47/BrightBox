@@ -1,16 +1,25 @@
+$sideoffset: 10%;
 header {
-  background: rgb(222,38,94);
-  background: -moz-linear-gradient(131deg, rgba(222,38,94,1) 0%, rgba(164,93,136,1) 46%, rgba(48,115,184,1) 100%);
+  background: rgb(222, 38, 94);
+  background: -moz-linear-gradient(131deg, rgba(222, 38, 94, 1) 0%, rgba(164, 93, 136, 1) 46%, rgba(48, 115, 184, 1) 100%);
   background: -webkit-linear-gradient(
-      131deg
-    , rgba(222,38,94,1) 0%, rgba(164,93,136,1) 46%, rgba(48,115,184,1) 100%);
+            131deg, rgba(222, 38, 94, 1) 0%, rgba(164, 93, 136, 1) 46%, rgba(48, 115, 184, 1) 100%);
   background: linear-gradient(
-      131deg
-    , rgba(222,38,94,1) 0%, rgba(164,93,136,1) 46%, rgba(48,115,184,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de265e",endColorstr="#3073b8",GradientType=1);
+                  131deg, rgba(222, 38, 94, 1) 0%, rgba(164, 93, 136, 1) 46%, rgba(48, 115, 184, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de265e", endColorstr="#3073b8", GradientType=1);
 
   font-size: 50px;
   color: white;
+}
+
+.logoholder {
+align-items: center;
+}
+
+.bblogo {
+  max-height: 100px;
+  padding: 20px;
+  margin-left: $sideoffset;
 }
 
 .container {
@@ -18,54 +27,59 @@ header {
   flex-direction: row;
 }
 
-.global {
-  /*margin-left: 200px;
-  margin-right: 200px;*/
+#global {
+  margin: $sideoffset;
 }
 
 footer {
-  background: grey;
+  background-color: grey;
   height: 70px;
 }
 
 .input-group {
   text-align: center;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0px; // dá se použít jako x-y anebo jako top-right-bottom-left
 }
 
-#th1 {
-  background: rgb(222,38,94);
+.paddy80{
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
-#th2 {
-  background: #c97bac;
+.th1 {
+  background-color: rgb(222, 38, 94);
+  color: white;
 }
 
-#mainTable {
+.th2 {
+  background-color: #c97bac;
+  color: white;
+}
+
+.mainTable {
   //border-collapse: collapse;
   width: 100%;
+  border-color: transparent;
 }
 
-#mainTable td, #mainTable th {
+.mainTable td, .mainTable th {
   border: 1px solid grey;
   //padding: 8px;
 }
 
-#mainTable tr:nth-child(even){background-color: #f2f2f2;}
+.mainTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#mainTable tr:hover {background-color: #ddd;}
+.mainTable tr:hover {
+  background-color: #ddd;
+}
 
-#mainTable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+.mainTable th {
   text-align: left;
   //background-color: #4CAF50;
   color: black;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding: 12px 80px;
 }
 
 
