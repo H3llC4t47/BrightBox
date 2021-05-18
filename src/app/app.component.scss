@@ -30,6 +30,14 @@ header {
   padding-bottom: 30px;
 }
 
+#th1 {
+  background: rgb(222,38,94);
+}
+
+#th2 {
+  background: #c97bac;
+}
+
 #mainTable {
   border-collapse: collapse;
   width: 100%;
@@ -48,8 +56,10 @@ header {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  //background-color: #4CAF50;
   color: white;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /*#input-collection-one {
