@@ -10,6 +10,7 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#de265e",endColorstr="#3073b8",GradientType=1);
 
   font-size: 50px;
+  color: white;
 }
 
 .container {
@@ -20,6 +21,11 @@ header {
 .global {
   /*margin-left: 200px;
   margin-right: 200px;*/
+}
+
+footer {
+  background: grey;
+  height: 70px;
 }
 
 .input-group {
@@ -39,13 +45,13 @@ header {
 }
 
 #mainTable {
-  border-collapse: collapse;
+  //border-collapse: collapse;
   width: 100%;
 }
 
 #mainTable td, #mainTable th {
   border: 1px solid grey;
-  padding: 8px;
+  //padding: 8px;
 }
 
 #mainTable tr:nth-child(even){background-color: #f2f2f2;}
