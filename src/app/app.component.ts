@@ -33,16 +33,4 @@ export class AppComponent {
     reprezentant = '';
     emailreprezentant = '';
     phonereprezentant = '';
-
-    constructor(private apiService: CommunicationService) {
-        this.getData();
-    }
-
-    getData(): void {
-        this.apiService.HttpGetRegistrace().subscribe(() => {
-            // tslint:disable-next-line:no-unused-expression
-            this.posty;
-            console.log(this.posty);
-        });
-    }
 }
