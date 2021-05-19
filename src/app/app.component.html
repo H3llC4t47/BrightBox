@@ -23,8 +23,12 @@
     </div>
     <br>
     <div class="input-group">
-        <input id="Počet měsíců" name="Id" type="text" class="in" style="width: 30%" [(ngModel)]="months"
-               placeholder="Počet měsíců: ">
+        <label for="Obdobi">Období od:
+                <input id="Obdobi" name="Id" type="date" class="in" [(ngModel)]="months"></label>
+        <label for="Obdobi">Období do:
+                <input id="Období" name="Id" type="date" class="in" [(ngModel)]="months"></label>
+            <input id="Počet měsíců" name="Id" type="text" class="in" [(ngModel)]="months"
+                   placeholder="Počet měsíců: ">
     </div>
 
     <table class="mainTable" width="100%">
@@ -270,8 +274,6 @@
         </tr>
     </table>
 
-    <h1></h1>
-
     <form action="/action_page.php">
         <label for="platnost">Platnost od* :</label>
         <input type="date" id="platnost" name="od">
@@ -279,8 +281,6 @@
         <input type="date" id="platnost" name="do">
         <input type="submit">
     </form>
-
-    <h1></h1>
 
     <input id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant" placeholder="Jméno obchodního zástupce*">
     <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
