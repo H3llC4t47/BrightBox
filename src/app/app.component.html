@@ -43,7 +43,8 @@
         <tr>
             <td>M</td>
             <td>Google</td>
-            <td> Kč</td>
+            <td *ngIf="jsonveci.items[0].isMonthly">{{jsonveci.items[0].price}}Kč</td>
+            <td *ngIf="!jsonveci.items[0].isMonthly">{{jsonveci.items[0].price / doc.getElementById("Počet měsíců").valueOf()}}</td> <!-- FIXME: idk, nefunguje -->
             <td> Kč</td>
             <td>
                 <input type="checkbox" id="google" name="Google">

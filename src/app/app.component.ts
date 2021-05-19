@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Params} from './params';
 import {CommunicationService} from './communication.service';
+import * as test from '../test.json';
 
 interface IPost {
     titulek: string;
@@ -18,6 +19,9 @@ export class AppComponent {
     global2 = false;
 
     posty: IPost[] = [];
+
+    jsonveci = test;
+    doc = document;
 
     client: Params[] = [];
     clientname = '';
