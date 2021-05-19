@@ -40,8 +40,5 @@ export class AppComponent {
         this.global = !this.global;
         this.global2 = !this.global;
     }
-    edit() {
-        this.global = true;
-        this.global2 = false;
-    }
+    
 }
