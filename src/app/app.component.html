@@ -1,7 +1,5 @@
-<header class="logoholder">
-    <label title="klikněte pro znovuotevření výběru" class="bblabel" for="hidebtn">
+<header (click)="hide()" style="  cursor: pointer;" title="klikněte pro znovuotevření výběru" class="logoholder">
         <img alt="" class="bblogo" src="../assets/brightbox_logo_white.svg">
-    </label>
 </header>
 
 <div *ngIf="global" class="global">
@@ -276,9 +274,9 @@
 
     <form action="/action_page.php">
         <label for="platnost">Platnost od* :</label>
-        <input type="date" id="platnost" name="od">
+        <input type="date" [(ngModel)]="from" id="platnost" name="od">
         <label for="platnost">Platnost do* </label>
-        <input type="date" id="platnost" name="do">
+        <input type="date" [(ngModel)]="till" id="platnost" name="do">
         <input type="submit">
     </form>
 
@@ -346,15 +344,14 @@
     <table>
         <tr>
             *Cena uvedená je bez DPH 21% <br>
-            Nabídka je platná od *od* do *do* na období *měsíce* měsíců
+            Nabídka je platná od *{{from}}* do *{{till}}* na období *{{months}}* měsíců
         </tr>
     </table>
 
     <table>
-        <td>*Jméno Příjmení*</td>
-        <td>Obchodní zástupce</td>
-        <td>*email*</td>
-        <td>*telefon*</td>
+        <td>*Jméno a příjmení obchodního zástupce*: {{reprezentant}} <br></td>
+        <td>*email*: {{emailreprezentant}} <br></td>
+        <td>*telefon*: {{phonereprezentant}}</td>
     </table>
 
 </div>

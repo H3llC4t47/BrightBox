@@ -31,6 +31,8 @@ export class AppComponent {
     dic = '';
 
     months = '';
+    from;
+    till;
 
     reprezentant = '';
     emailreprezentant = '';
@@ -39,9 +41,5 @@ export class AppComponent {
     hide() {
         this.global = !this.global;
         this.global2 = !this.global;
-    }
-    edit() {
-        this.global = true;
-        this.global2 = false;
     }
 }
