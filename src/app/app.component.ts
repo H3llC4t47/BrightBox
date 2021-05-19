@@ -37,8 +37,8 @@ export class AppComponent {
     phonereprezentant = '';
 
     hide() {
-        this.global = false;
-        this.global2 = true;
+        this.global = !this.global;
+        this.global2 = !this.global;
     }
     edit() {
         this.global = true;

@@ -4,7 +4,7 @@
     </label>
 </header>
 
-<div *ngIf="global">
+<div *ngIf="global" class="global">
 
     <div class="input-group">
         <input id="Jméno klienta" name="Id" type="text" class="in" [(ngModel)]="clientname"
@@ -291,7 +291,7 @@
     <button (click)="hide()" id="hidebtn">Done</button>
 </div>
 
-<div *ngIf="global2">
+<div *ngIf="global2" class="global">
     <table>
         <th>
             Nabídka ID: 69420 <br>
@@ -356,8 +356,6 @@
         <td>*email*</td>
         <td>*telefon*</td>
     </table>
-
-    <button (click)="edit()" id="hidebtn">edit</button>
 
 </div>
 <footer class="f2">
