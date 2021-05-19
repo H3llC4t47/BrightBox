@@ -40,5 +40,4 @@ export class AppComponent {
         this.global = !this.global;
         this.global2 = !this.global;
     }
-    
 }
