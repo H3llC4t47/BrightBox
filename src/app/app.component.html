@@ -4,7 +4,8 @@
     </label>
 </header>
 
-<div id="global">
+<div *ngIf="global">
+
     <div class="input-group">
         <input id="Jméno klienta" name="Id" type="text" class="form-control" [(ngModel)]="clientname"
                placeholder="Jméno klienta">
@@ -351,7 +352,9 @@
 <h2>*email*</h2>
 <h2>*telefon*</h2>
 
-<h1></h1>
+    <button (click)="edit()" id="hidebtn">Edit</button>
+
+    <h1></h1>
 
 <footer>
     BrightBox s.r.o. | Navrátilova 1421/11 Praha, 110 00, DIČ CZ04845781, 253539 C, Městský soud v Praze
