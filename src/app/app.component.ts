@@ -14,6 +14,7 @@ interface IPost {
 })
 export class AppComponent {
     title = 'BrightBoxFrontEnd';
+    global2 = false;
 
     posty: IPost[] = [];
 
@@ -36,5 +37,6 @@ export class AppComponent {
 
     hide() {
         document.getElementById('global').hidden = !document.getElementById('global').hidden;
+        this.global2 = true;
     }
 }
