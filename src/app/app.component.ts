@@ -1,5 +1,11 @@
 import {Component} from '@angular/core';
 import {Params} from './params';
+import {CommunicationService} from './communication.service';
+
+interface IPost {
+    titulek: string;
+    text: string;
+}
 
 @Component({
     selector: 'app-root',
@@ -8,6 +14,8 @@ import {Params} from './params';
 })
 export class AppComponent {
     title = 'BrightBoxFrontEnd';
+
+    posty: IPost[] = [];
 
     client: Params[] = [];
     clientname = '';
@@ -25,4 +33,16 @@ export class AppComponent {
     reprezentant = '';
     emailreprezentant = '';
     phonereprezentant = '';
+
+    constructor(private apiService: CommunicationService) {
+        this.getData();
+    }
+
+    getData(): void {
+        this.apiService.HttpGetRegistrace().subscribe(() => {
+            // tslint:disable-next-line:no-unused-expression
+            this.posty;
+            console.log(this.posty);
+        });
+    }
 }
