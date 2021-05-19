@@ -33,4 +33,8 @@ export class AppComponent {
     reprezentant = '';
     emailreprezentant = '';
     phonereprezentant = '';
+
+    hide() {
+        document.getElementById('global').hidden = !document.getElementById('global').hidden;
+    }
 }

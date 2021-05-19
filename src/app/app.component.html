@@ -1,5 +1,7 @@
-<header class="logoholder">
-    <img alt="" class="bblogo" src="../assets/brightbox_logo_white.png">
+<header class="logoholder" xmlns:style="http://www.w3.org/1999/xhtml">
+    <label title="klikněte pro znovuotevření výběru" class="bblabel" for="hidebtn">
+        <img alt="" class="bblogo" src="../assets/brightbox_logo_white.png">
+    </label>
 </header>
 
 <div id="global">
@@ -10,7 +12,7 @@
                placeholder="Název firmy*">
         <input id="Ulice a ČP" name="Price" type="text" class="form-control" [(ngModel)]="adress"
                placeholder="Ulice a ČP">
-        <input id="Město a PSČ" name="Studio" type="text" class="form-control" [(ngModel)]="city"
+      <input id="Město a PSČ" name="Studio" type="text" class="form-control" [(ngModel)]="city"
                placeholder="Město a PSČ"><br></div>
     <div class="input-group">
         <input id="Telefon" name="Id" type="text" class="form-control" [(ngModel)]="phone" placeholder="Telefon">
@@ -289,16 +291,9 @@
 
     <h1></h1>
 
+    <button (click)="hide()" id="hidebtn">Done</button>
 </div>
-<button>GENEROVAT NABÍDKU</button>
-<footer>
-    //generovaná nabídka
-</footer>
 
-
-<header class="logoholder">
-    <img class="bblogo" src="../assets/brightbox_logo_white.png">
-</header>
 
 <h1></h1>
 
