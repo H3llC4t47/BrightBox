@@ -19,8 +19,8 @@
     <div class="input-group">
         <input id="Telefon" name="Id" type="text" class="form-control" [(ngModel)]="phone" placeholder="Telefon">
         <input id="Email" name="Name" type="text" class="form-control" [(ngModel)]="email" placeholder="E-mail*">
-        <input id="IČ" name="Price" type="text" class="form-control" [(ngModel)]="ic" placeholder="IČ">
-        <input id="DIČ" name="Studio" type="text" class="form-control" [(ngModel)]="dic" placeholder="DIČ">
+        <input id="IČ" name="Price" type="number" class="form-control" [(ngModel)]="ic" placeholder="IČ">
+        <input id="DIČ" name="Studio" type="number" class="form-control" [(ngModel)]="dic" placeholder="DIČ">
     </div>
     <br>
     <div class="input-group">
@@ -278,10 +278,8 @@
     <form action="/action_page.php">
         <label for="platnost">Platnost od* :</label>
         <input type="date" id="platnost" name="od">
-        <input type="submit">
-
         <label for="platnost">Platnost do* </label>
-        <input type="do" name="do">
+        <input type="date" id="platnost" name="do">
         <input type="submit">
     </form>
 
