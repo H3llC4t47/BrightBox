@@ -7,27 +7,25 @@
 <div *ngIf="global">
 
     <div class="input-group">
-        <input id="Jméno klienta" name="Id" type="text" class="form-control" [(ngModel)]="clientname"
+        <input id="Jméno klienta" name="Id" type="text" class="in" [(ngModel)]="clientname"
                placeholder="Jméno klienta">
-        <input id="Název firmy" name="Name" type="text" class="form-control" [(ngModel)]="firmname"
+        <input id="Název firmy" name="Name" type="text" class="in" [(ngModel)]="firmname"
                placeholder="Název firmy*">
-        <input id="Ulice a ČP" name="Price" type="text" class="form-control" [(ngModel)]="adress"
+        <input id="Ulice a ČP" name="Price" type="text" class="in" [(ngModel)]="adress"
                placeholder="Ulice a ČP">
-        <input id="Město a PSČ" name="Studio" type="text" class="form-control" [(ngModel)]="city"
+        <input id="Město a PSČ" name="Studio" type="text" class="in" [(ngModel)]="city"
                placeholder="Město a PSČ"><br></div>
     <div class="input-group">
-        <input id="Telefon" name="Id" type="text" class="form-control" [(ngModel)]="phone" placeholder="Telefon">
-        <input id="Email" name="Name" type="text" class="form-control" [(ngModel)]="email" placeholder="E-mail*">
-        <input id="IČ" name="Price" type="number" class="form-control" [(ngModel)]="ic" placeholder="IČ">
-        <input id="DIČ" name="Studio" type="number" class="form-control" [(ngModel)]="dic" placeholder="DIČ">
+        <input id="Telefon" name="Id" type="text" class="in" [(ngModel)]="phone" placeholder="Telefon">
+        <input id="Email" name="Name" type="text" class="in" [(ngModel)]="email" placeholder="E-mail*">
+        <input id="IČ" name="Price" type="number" class="in" [(ngModel)]="ic" placeholder="IČ">
+        <input id="DIČ" name="Studio" type="number" class="in" [(ngModel)]="dic" placeholder="DIČ">
     </div>
     <br>
     <div class="input-group">
-        <input id="Počet měsíců" name="Id" type="text" class="form-control" style="width: 30%" [(ngModel)]="months"
+        <input id="Počet měsíců" name="Id" type="text" class="in" style="width: 30%" [(ngModel)]="months"
                placeholder="Počet měsíců: ">
     </div>
-
-    <h1></h1>
 
     <table class="mainTable" width="100%">
         <tr>
@@ -294,66 +292,74 @@
 </div>
 
 <div *ngIf="global2">
-
-
-    <h1></h1>
-
-    <h1>
-        Nabídka ID: 69420
-        Odběratel: *Jméno klienta, Firma, telefon, email, adresa*
-    </h1>
-
-    <h1></h1>
-
     <table>
+        <th>
+            Nabídka ID: 69420 <br>
+            Odběratel: *Jméno klienta, Firma, telefon, email, adresa*
+        </th>
+    </table>
+
+    <table class="mainTable" width="100%">
         <tr>
-            <th>Vykonnostní marketing</th>
+            <td class="th1">Výkonnostní marketing</td>
         </tr>
         <tr>
-            <th>Správa a optimalizace reklamních kampaní</th>
-            <th>Cena</th>
-            <th>Cena měsíčně</th>
+            <td class="th2">Správa a optimalizace reklamních kampaní</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
         </tr>
         <tr>
-            <th>M</th>
-            <th>Seznam</th>
-            <th> Kč</th>
-            <th> Kč</th>
+            <td>M</td>
+            <td>Seznam</td>
+            <td> Kč</td>
+            <td> Kč</td>
+            <td></td>
         </tr>
         <tr>
-            <th>M</th>
-            <th>Youtube</th>
-            <th> Kč</th>
-            <th> Kč</th>
-        </tr>
-        <tr>
-            <th>Srovnávače zboží</th>
-            <th>Cena</th>
-            <th>Cena měsíčně</th>
-        </tr>
-        <tr>
-            <th>M</th>
-            <th>Glami</th>
-            <th> Kč</th>
-            <th> Kč</th>
-        </tr>
-        <tr>
-            <th>Celkem měsíčně*</th>
+            <td>M</td>
+            <td>Youtube</td>
+            <td> Kč</td>
+            <td> Kč</td>
+            <td></td>
         </tr>
     </table>
 
-    <h2>*Cena uvedená je bez DPH 21%</h2>
-    <h2>Nabídka je platná od *od* do *do* na období *měsíce* měsíců</h2>
+    <table class="mainTable" width="100%">
+        <tr>
+            <td class="th2">Srovnávače zboží</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>Glami</td>
+            <td> Kč</td>
+            <td> Kč</td>
+            <td></td>
+        </tr>
+    </table>
 
-    <h1></h1>
+    <table>
+        <tr>
+            *Cena uvedená je bez DPH 21% <br>
+            Nabídka je platná od *od* do *do* na období *měsíce* měsíců
+        </tr>
+    </table>
 
-    <h1>*Jméno Příjmení*</h1>
-    <h4>Obchodní zástupce</h4>
-    <h2>*email*</h2>
-    <h2>*telefon*</h2>
+    <table>
+        <td>*Jméno Příjmení*</td>
+        <td>Obchodní zástupce</td>
+        <td>*email*</td>
+        <td>*telefon*</td>
+    </table>
 
-    <h1></h1>
-
+    <footer class="f2">
+        BrightBox s.r.o. | Navrátilova 1421/11 Praha, 110 00, DIČ CZ04845781, 253539 C, Městský soud v Praze
+    </footer>
 
     <button (click)="edit()" id="hidebtn">edit</button>
 
