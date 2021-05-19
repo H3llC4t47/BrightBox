@@ -31,6 +31,8 @@ export class AppComponent {
     dic = '';
 
     months = '';
+    from;
+    till;
 
     reprezentant = '';
     emailreprezentant = '';
