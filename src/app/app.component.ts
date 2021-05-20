@@ -40,7 +40,6 @@ export class AppComponent {
     global2 = false;
     jsonveci = backup;
     doc = document;
-    client: Params[] = [];
     clientname = '';
     firmname = '';
     adress = '';
