@@ -9,6 +9,15 @@ import {BrowserModule} from '@angular/platform-browser';
 import {CommunicationService} from './communication.service';
 import * as backup from '../backup.json';
 
+interface JSON {
+    isMonthly: boolean;
+    isGrouped: boolean;
+    catID: number;
+    name: string;
+    price: number;
+    label: string;
+}
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -29,7 +38,7 @@ export class AppComponent {
      */
     global = true;
     global2 = false;
-    jsonveci = backup;
+    jsonveci: JSON[] = backup;
     doc = document;
     client: Params[] = [];
     clientname = '';
@@ -53,5 +62,6 @@ export class AppComponent {
     hide() {
         this.global = !this.global;
         this.global2 = !this.global;
+        console.log(this.jsonveci);
     }
 }
