@@ -7,16 +7,16 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class CommunicationService {
 
-  constructor(private httpClient: HttpClient) {
-  }
+    constructor(private httpClient: HttpClient) {
+    }
 
-  public HttpGetRUpdate() {
-    this.httpClient.get('http://127.0.0.1:8080/fuj-backend/api/polozky/data', {}).subscribe(val => {
-      return val;
-    } );
-  }
+    public HttpGetRUpdate() {
+        this.httpClient.get('http://127.0.0.1:8080/fuj-backend/api/polozky/data', {}).subscribe(val => {
+            return val;
+        });
+    }
 }
