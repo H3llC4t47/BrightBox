@@ -1,7 +1,14 @@
 import {Component} from '@angular/core';
 import {Params} from './params';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {observable, Observable, of} from 'rxjs';
+import {HttpClientModule} from '@angular/common/http';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {CommunicationService} from './communication.service';
 import * as backup from '../backup.json';
+
 
 interface IPost {
     titulek: string;
@@ -20,7 +27,10 @@ export class AppComponent {
 
     posty: IPost[] = [];
 
+
     jsonveci = backup;
+    // tslint:disable-next-line:max-line-length
+    jsonfrombe = httpClient.request('GET', 'http://127.0.0.1:8080/fuj-backend/api/polozky/data', {responseType:'json'}); //Fixme: jak se dělaj http requesty?? :(
     doc = document;
 
     client: Params[] = [];
