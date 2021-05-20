@@ -9,12 +9,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {CommunicationService} from './communication.service';
 import * as backup from '../backup.json';
 
-
-interface IPost {
-    titulek: string;
-    text: string;
-}
-
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -35,7 +29,6 @@ export class AppComponent {
      */
     global = true;
     global2 = false;
-    posty: IPost[] = [];
     jsonveci = backup;
     doc = document;
     client: Params[] = [];

@@ -40,8 +40,14 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr *ngFor="let item of jsonveci.items; let i = index">
+        <tr *ngFor="let item of jsonveci; let i = index">
             <app-bunka [item]="item"></app-bunka>
+            <td>{{item.items.isMonthly}}</td>
+            <td>{{item.items.isGrouped}}</td>
+            <td>{{item.items.catID}}</td>
+            <td>{{item.items.name}}</td>
+            <td>{{item.items.price}}</td>
+
             <td>
                 <input type="checkbox" id="{{i}}" name="{{i}}">
             </td>
