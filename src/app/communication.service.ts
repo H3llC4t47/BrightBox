@@ -14,7 +14,7 @@ export class CommunicationService {
   constructor(private httpClient: HttpClient) {
   }
 
-  public HttpGetRegistrace() {
+  public HttpGetRUpdate() {
     this.httpClient.get('http://127.0.0.1:8080/fuj-backend/api/polozky/data', {}).subscribe(val => {
       return val;
     } );
