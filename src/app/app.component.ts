@@ -38,7 +38,7 @@ export class AppComponent {
      */
     global = true;
     global2 = false;
-    jsonveci: JSON[] = backup;
+    jsonveci = backup;
     doc = document;
     client: Params[] = [];
     clientname = '';
