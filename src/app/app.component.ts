@@ -5,7 +5,6 @@ import {observable, Observable, of} from 'rxjs';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import * as backup from '../assets/backup.json';
 
 interface Data {
     items: Item[];
