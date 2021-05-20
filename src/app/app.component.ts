@@ -27,7 +27,7 @@ export class AppComponent {
 *    }
 *
 *    VytvoritUzivatele(): void {
-*        this.apiService.HttpGetRUpdate(this.UzivatelskeJmeno, this.Heslo, this.Age).subscribe((info) => {
+*        this.apiService.HttpGetRUpdate().subscribe((info) => {
 *            this.Prijmuto = info;
 *        });
 *    }
