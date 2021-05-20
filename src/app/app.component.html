@@ -22,10 +22,10 @@
     <br>
     <div class="input-group">
         <label for="Obdobi">Období od:
-            <input id="Obdobi" name="Id" type="date" class="in" [(ngModel)]="months"></label>
-        <label for="Obdobi">Období do:
-            <input id="Období" name="Id" type="date" class="in" [(ngModel)]="months"></label>
-        <input id="Počet měsíců" name="Id" type="text" class="in" [(ngModel)]="months"
+            <input id="Obdobi" name="Id" type="date" class="in"> <!-- [(ngModel)]="months"--> </label>
+        <label for="Obdobi">Období do:<!---> -
+            <input id="Období" name="Id" type="date" class="in"> <!-- [(ngModel)]="months"--> </label>
+        <input id="Počet měsíců" name="Id" type="number" class="in" [(ngModel)]="months"
                placeholder="Počet měsíců: ">
     </div>
 
@@ -40,17 +40,21 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr *ngFor="let item of jsonveci.items; let i = index">
-            <app-bunka [item]="item"></app-bunka>
-            <td>{{item.isMonthly}}</td>
-            <td>{{item.isGrouped}}</td>
-            <td>{{item.catID}}</td>
-            <td>{{item.name}}</td>
-            <td>{{item.price}}</td>
+        <tr *ngFor="let item of jsonveci.items[0][0]; let i = index">
 
-            <td>
-                <input type="checkbox" id="{{i}}" name="{{i}}">
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+                                                                    id="11{{i}}"
+                                                                    name="11{{i}}">
             </td>
+
         </tr>
 
     </table>
@@ -63,41 +67,21 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>Heureka</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="heureka" name="heureka">
+        <tr *ngFor="let item of jsonveci.items[0][1]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+                                                                    id="12{{i}}"
+                                                                    name="12{{i}}">
             </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Glami</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="glami" name="Glami">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Biano</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="biano" name="Biano">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Favi</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="favi" name="Favi">
-            </td>
+
         </tr>
     </table>
 
@@ -109,32 +93,21 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr>
-            <td>J</td>
-            <td>Heureka</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
+        <tr *ngFor="let item of jsonveci.items[0][2]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+                                                                    id="13{{i}}"
+                                                                    name="13{{i}}">
             </td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>Glami</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
-        </tr>
-        <tr>
-            <td>J</td>
-            <td>Biano</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
+
         </tr>
     </table>
 
@@ -150,41 +123,21 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
+        <tr *ngFor="let item of jsonveci.items[1][0]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+                                                                    id="21{{i}}"
+                                                                    name="21{{i}}">
             </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
+
         </tr>
     </table>
 

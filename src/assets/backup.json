@@ -1,241 +1,283 @@
 {
   "items": [
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "Google",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "Seznam",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "Facebook + Instagram",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "Youtube",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "TikTok",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 101,
-      "name": "Linkedin",
-      "price": 6500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 102,
-      "name": "Heureka",
-      "price": 4000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 102,
-      "name": "Glami",
-      "price": 4000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 102,
-      "name": "Biano",
-      "price": 4000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 102,
-      "name": "Favi",
-      "price": 4000
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 103,
-      "name": "Grafická příprava setu bannerů 13x",
-      "price": 8000
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 103,
-      "name": "Analýza klíčových slov",
-      "price": 5000
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 104,
-      "name": "Google Ads",
-      "price": 3500
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 104,
-      "name": "Seznam Sklik",
-      "price": 3500
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 104,
-      "name": "Facebook Ads manager",
-      "price": 3500
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 201,
-      "name": "Facebook",
-      "price": 9000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 201,
-      "name": "Instagram",
-      "price": 9000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 201,
-      "name": "Youtube",
-      "price": 9000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 201,
-      "name": "Linkedin",
-      "price": 9000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": true,
-      "catID": 201,
-      "name": "Pinterest",
-      "price": 9000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 202,
-      "name": "Tvorba obsahu na sociální sítě (foto + grafika)",
-      "price": 9000
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 301,
-      "name": "Kompletní SEO analýza",
-      "price": 1600
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 301,
-      "name": "Analýza on-page faktorů",
-      "price": 1200
-    },
-    {
-      "isMonthly": false,
-      "isGrouped": false,
-      "catID": 301,
-      "name": "Úpravy na zálkadě SEO analýzy",
-      "price": "dle analýzy"
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 401,
-      "name": "1 email měsíčně",
-      "price": 4000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 401,
-      "name": "2 emaily měsíčně",
-      "price": 6000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 401,
-      "name": "4 emaily měsíčně",
-      "price": 10000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 501,
-      "name": "1 článek měsíčně",
-      "price": 4000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 501,
-      "name": "2 články měsíčně",
-      "price": 6000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 501,
-      "name": "4 články měsíčně",
-      "price": 10000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 601,
-      "name": "Influencer marketing Basic",
-      "price": 20000
-    },
-    {
-      "isMonthly": true,
-      "isGrouped": false,
-      "catID": 601,
-      "name": "Influencer marketing Basic",
-      "price": 40000
-    }
+    [
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "Google",
+          "price": 6500
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "Seznam",
+          "price": 6500
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "Facebook + Instagram",
+          "price": 6500
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "Youtube",
+          "price": 6500
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "TikTok",
+          "price": 6500
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 101,
+          "name": "Linkedin",
+          "price": 6500
+        }
+      ],
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 102,
+          "name": "Heureka",
+          "price": 4000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 102,
+          "name": "Glami",
+          "price": 4000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 102,
+          "name": "Biano",
+          "price": 4000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 102,
+          "name": "Favi",
+          "price": 4000
+        }
+      ],
+      [
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 103,
+          "name": "Grafická příprava setu bannerů 13x",
+          "price": 8000
+        },
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 103,
+          "name": "Analýza klíčových slov",
+          "price": 5000
+        }
+      ],
+      [
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 104,
+          "name": "Google Ads",
+          "price": 3500
+        },
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 104,
+          "name": "Seznam Sklik",
+          "price": 3500
+        },
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 104,
+          "name": "Facebook Ads manager",
+          "price": 3500
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 201,
+          "name": "Facebook",
+          "price": 9000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 201,
+          "name": "Instagram",
+          "price": 9000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 201,
+          "name": "Youtube",
+          "price": 9000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 201,
+          "name": "Linkedin",
+          "price": 9000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": true,
+          "catID": 201,
+          "name": "Pinterest",
+          "price": 9000
+        }
+      ],
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 202,
+          "name": "Tvorba obsahu na sociální sítě (foto + grafika)",
+          "price": 9000
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 301,
+          "name": "Kompletní SEO analýza",
+          "price": 1600
+        },
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 301,
+          "name": "Analýza on-page faktorů",
+          "price": 1200
+        },
+        {
+          "isMonthly": false,
+          "isGrouped": false,
+          "catID": 301,
+          "name": "Úpravy na zálkadě SEO analýzy",
+          "price": "dle analýzy"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 401,
+          "name": "1 email měsíčně",
+          "price": 4000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 401,
+          "name": "2 emaily měsíčně",
+          "price": 6000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 401,
+          "name": "4 emaily měsíčně",
+          "price": 10000
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 501,
+          "name": "1 článek měsíčně",
+          "price": 4000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 501,
+          "name": "2 články měsíčně",
+          "price": 6000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 501,
+          "name": "4 články měsíčně",
+          "price": 10000
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 601,
+          "name": "Influencer marketing Basic",
+          "price": 20000
+        },
+        {
+          "isMonthly": true,
+          "isGrouped": false,
+          "catID": 601,
+          "name": "Influencer marketing Basic",
+          "price": 40000
+        }
+      ]
+    ]
   ],
-  "wholesalePricing":[
+  "wholesalePricing": [
     {
       "catID": 101,
       "prices": [
-        6500, 12000, 1650, 20000, 24500, 28000, 32000
+        6500,
+        12000,
+        1650,
+        20000,
+        24500,
+        28000,
+        32000
       ]
     },
     {
       "catID": 201,
       "prices": [
-        9000, 16000, 21000, 25000, 30000
+        9000,
+        16000,
+        21000,
+        25000,
+        30000
       ]
     }
   ],
