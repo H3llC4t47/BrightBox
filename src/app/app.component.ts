@@ -9,10 +9,13 @@ import {BrowserModule} from '@angular/platform-browser';
 import {CommunicationService} from './communication.service';
 import * as backup from '../backup.json';
 
-
-interface IPost {
-    titulek: string;
-    text: string;
+interface JSON {
+    isMonthly: boolean;
+    isGrouped: boolean;
+    catID: number;
+    name: string;
+    price: number;
+    label: string;
 }
 
 @Component({
@@ -22,22 +25,21 @@ interface IPost {
 })
 export class AppComponent {
     title = 'BrightBoxFrontEnd';
-/**
-*    constructor(private apiService: HttpService) {
-*    }
-*
-*    VytvoritUzivatele(): void {
-*        this.apiService.HttpGetRUpdate().subscribe((info) => {
-*            this.Prijmuto = info;
-*        });
-*    }
-*/
+
+    /**
+     *    constructor(private apiService: HttpService) {
+     *    }
+     *
+     *    VytvoritUzivatele(): void {
+     *        this.apiService.HttpGetRUpdate().subscribe((info) => {
+     *            this.Prijmuto = info;
+     *        });
+     *    }
+     */
     global = true;
     global2 = false;
-    posty: IPost[] = [];
     jsonveci = backup;
     doc = document;
-    client: Params[] = [];
     clientname = '';
     firmname = '';
     adress = '';
@@ -59,5 +61,6 @@ export class AppComponent {
     hide() {
         this.global = !this.global;
         this.global2 = !this.global;
+        console.log(this.jsonveci);
     }
 }
