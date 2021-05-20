@@ -22,17 +22,21 @@ interface IPost {
 })
 export class AppComponent {
     title = 'BrightBoxFrontEnd';
+/**
+*    constructor(private apiService: HttpService) {
+*    }
+*
+*    VytvoritUzivatele(): void {
+*        this.apiService.HttpGetPozadavek(this.UzivatelskeJmeno, this.Heslo, this.Age).subscribe((info) => {
+*            this.Prijmuto = info;
+*        });
+*    }
+*/
     global = true;
     global2 = false;
-
     posty: IPost[] = [];
-
-
     jsonveci = backup;
-    // tslint:disable-next-line:max-line-length
-    jsonfrombe = httpClient.request('GET', 'http://127.0.0.1:8080/fuj-backend/api/polozky/data', {responseType:'json'}); //Fixme: jak se dělaj http requesty?? :(
     doc = document;
-
     client: Params[] = [];
     clientname = '';
     firmname = '';
