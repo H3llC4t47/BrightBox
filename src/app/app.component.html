@@ -1,5 +1,5 @@
 <header (click)="hide()" style="  cursor: pointer;" title="klikněte pro znovuotevření výběru" class="logoholder">
-        <img alt="" class="bblogo" src="../assets/brightbox_logo_white.svg">
+    <img alt="" class="bblogo" src="../assets/brightbox_logo_white.svg">
 </header>
 
 <div *ngIf="global" class="global">
@@ -22,11 +22,11 @@
     <br>
     <div class="input-group">
         <label for="Obdobi">Období od:
-                <input id="Obdobi" name="Id" type="date" class="in" [(ngModel)]="months"></label>
+            <input id="Obdobi" name="Id" type="date" class="in" [(ngModel)]="months"></label>
         <label for="Obdobi">Období do:
-                <input id="Období" name="Id" type="date" class="in" [(ngModel)]="months"></label>
-            <input id="Počet měsíců" name="Id" type="text" class="in" [(ngModel)]="months"
-                   placeholder="Počet měsíců: ">
+            <input id="Období" name="Id" type="date" class="in" [(ngModel)]="months"></label>
+        <input id="Počet měsíců" name="Id" type="text" class="in" [(ngModel)]="months"
+               placeholder="Počet měsíců: ">
     </div>
 
     <table class="mainTable" width="100%">
@@ -40,55 +40,13 @@
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>Google</td>
-            <td *ngIf="jsonveci.items[0].isMonthly">{{jsonveci.items[0].price}}Kč</td>
-            <td *ngIf="!jsonveci.items[0].isMonthly">{{jsonveci.items[0].price / doc.getElementById("Počet měsíců").valueOf()}}</td> <!-- FIXME: idk, nefunguje -->
-            <td> Kč</td>
+        <tr *ngFor="let item of jsonveci.items; let i = index">
+            <app-bunka [item]="item"></app-bunka>
             <td>
-                <input type="checkbox" id="google" name="Google">
+                <input type="checkbox" id="{{i}}" name="{{i}}">
+            </td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>Seznam</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="seznam" name="Seznam">
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Facebook + Instagram</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="fb+ig" name="FB + IG">
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Youtube</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="youtube" name="Youtube">
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>TikTok</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="tiktok" name="TikTok">
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Linkedin</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" id="linkedin" name="Linkedin">
-        </tr>
+
     </table>
 
     <table class="mainTable" width="100%">

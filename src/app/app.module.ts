@@ -5,10 +5,12 @@ import {HttpClientModule} from '@angular/common/http';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {TableCellComponent} from './table-cell/table-cell.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        TableCellComponent
     ],
     imports: [
         BrowserModule,

@@ -22,16 +22,17 @@ interface IPost {
 })
 export class AppComponent {
     title = 'BrightBoxFrontEnd';
-/**
-*    constructor(private apiService: HttpService) {
-*    }
-*
-*    VytvoritUzivatele(): void {
-*        this.apiService.HttpGetRUpdate().subscribe((info) => {
-*            this.Prijmuto = info;
-*        });
-*    }
-*/
+
+    /**
+     *    constructor(private apiService: HttpService) {
+     *    }
+     *
+     *    VytvoritUzivatele(): void {
+     *        this.apiService.HttpGetRUpdate().subscribe((info) => {
+     *            this.Prijmuto = info;
+     *        });
+     *    }
+     */
     global = true;
     global2 = false;
     posty: IPost[] = [];
