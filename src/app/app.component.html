@@ -111,6 +111,31 @@
         </tr>
     </table>
 
+    <table class="mainTable" width="100%">
+        <tr>
+            <td class="th2">Srovnávače zboží</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr *ngFor="let item of jsonveci.items[0][3]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+                                                                    id="14{{i}}"
+                                                                    name="14{{i}}">
+            </td>
+
+        </tr>
+    </table>
 
     <table class="mainTable" width="100%">
         <tr>
@@ -125,70 +150,157 @@
         </tr>
         <tr *ngFor="let item of jsonveci.items[1][0]; let i = index">
 
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
             <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
             -->
-            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
+            <td *ngIf="item.catID.toString().charAt(0)=='2'"><input type="checkbox"
                                                                     id="21{{i}}"
                                                                     name="21{{i}}">
             </td>
 
         </tr>
+
+        <tr *ngFor="let item of jsonveci.items[1][1]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='2'"><input type="checkbox"
+                                                                    id="22{{i}}"
+                                                                    name="22{{i}}">
+            </td>
+
+        </tr>
     </table>
 
-    <h1></h1>
 
     <table class="mainTable" width="100%">
         <tr>
-            <td class="th2">Subcategory</td>
+            <td class="th1">SEO optimalizace</td>
+        </tr>
+        <tr>
+            <td class="th2">SEO</td>
             <td class="th2">Cena</td>
             <td class="th2">Cena měsíčně</td>
             <td class="th2"></td>
             <td class="th2"></td>
         </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
-            </td>
+        <tr *ngFor="let item of jsonveci.items[2][0]; let i = index">
 
-        </tr>
-        <tr>
-            <td>M</td>
-            <td>Lorem ipsum</td>
-            <td> Kč</td>
-            <td> Kč</td>
-            <td>
-                <input type="checkbox" name="heureka">
+            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='3' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='3' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='3'"><input type="checkbox"
+                                                                    id="31{{i}}"
+                                                                    name="31{{i}}">
             </td>
         </tr>
     </table>
+
+
+    <table class="mainTable" width="100%">
+        <tr>
+            <td class="th1">Email marketing</td>
+        </tr>
+        <tr>
+            <td class="th2">Měsíční správa email marketingu</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr *ngFor="let item of jsonveci.items[3][0]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='4' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='4' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='4'"><input type="checkbox"
+                                                                      id="41{{i}}"
+                                                                    name="41{{i}}">
+            </td>
+        </tr>
+    </table>
+
+
+    <table class="mainTable" width="100%">
+        <tr>
+            <td class="th1">Copywriting</td>
+        </tr>
+        <tr>
+            <td class="th2">Tvorba obsahu na blog</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr *ngFor="let item of jsonveci.items[4][0]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='5' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='5' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='5'"><input type="checkbox"
+                                                                    id="51{{i}}"
+                                                                    name="51{{i}}">
+            </td>
+        </tr>
+    </table>
+
+    <table class="mainTable" width="100%">
+        <tr>
+            <td class="th1">Influencer marketing</td>
+        </tr>
+        <tr>
+            <td class="th2">Influencer marketing basic</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr *ngFor="let item of jsonveci.items[5][0]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='6' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='6' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <!--
+            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isMonthly}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isGrouped}}</td>
+            -->
+            <td *ngIf="item.catID.toString().charAt(0)=='6'"><input type="checkbox"
+                                                                    id="61{{i}}"
+                                                                    name="61{{i}}">
+            </td>
+        </tr>
+    </table>
+
+    <h1></h1>
+
+
 
     <form action="/action_page.php">
         <label for="platnost">Platnost od* :</label>
