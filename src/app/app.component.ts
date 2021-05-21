@@ -49,6 +49,9 @@ export class AppComponent implements OnInit {
     phonereprezentant = '';
 
     i: number;
+    x: number;
+    groupcount: number;
+    groupamount: number;
     totalprice: number;
 
     ngOnInit(): void {
@@ -71,8 +74,35 @@ export class AppComponent implements OnInit {
         this.global2 = !this.global;
         console.log(this.jsonveci);
     }
-    PocitaniCastky() {
 
+    PocitaniCastky() {
+        for (this.i = 0; this.i < this.jsonveci.items.length; this.i++) {
+            if (this.jsonveci.items[this.i].isGrouped) {
+                this.groupcount++;
+            } else {
+                this.totalprice += this.jsonveci.items[this.i].price;
+            }
+        }
+        switch (this.groupcount) {
+            case 1:
+                this.groupamount = 6500;
+                break;
+            case 2:
+                this.groupamount = 12000;
+                break;
+            case 3:
+                this.groupamount = 16500;
+                break;
+            case 4:
+                this.groupamount = 20000;
+                break;
+            default:
+                this.groupamount = 0;
+                break;
+        }
+        this.totalprice += this.groupamount;
+        this.groupamount = 0;
+        this.groupcount = 0;
     }
 
 }
