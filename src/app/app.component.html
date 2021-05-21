@@ -28,10 +28,10 @@
     <table class="mainTable" width="100%">
         <tr>
             <td class="th1">Výkonnostní marketing</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">Správa a optimalizace reklamních kampaní</td>
@@ -46,17 +46,15 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[0][i]">
+            </td>
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
             -->
-            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
-                                                                    id="11{{i}}"
-                                                                    name="11{{i}}">
-            </td>
+
 
         </tr>
-
 
 
         <tr>
@@ -72,44 +70,38 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[1][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
-                                                                    id="12{{i}}"
-                                                                    name="12{{i}}">
-            </td>
-                    </tr>
-
-
-
-                    <tr>
-                        <td class="th2">Srovnávače zboží</td>
-                        <td class="th2">Cena</td>
-                        <td class="th2">Cena měsíčně</td>
-                        <td class="th2"></td>
-                        <td class="th2"></td>
-                    </tr>
-                    <tr *ngFor="let item of jsonveci.items[0][2]; let i = index">
-
-                        <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
-                        <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
-                        <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
-                        <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-
-                        <!--
-                        <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
-                        <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
-                        -->
-            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
-                                                                    id="13{{i}}"
-                                                                    name="13{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+                -->
 
         </tr>
 
+
+        <tr>
+            <td class="th2">Srovnávače zboží</td>
+            <td class="th2">Cena</td>
+            <td class="th2">Cena měsíčně</td>
+            <td class="th2"></td>
+            <td class="th2"></td>
+        </tr>
+        <tr *ngFor="let item of jsonveci.items[0][2]; let i = index">
+
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.name}}</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[2][i]">
+
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+                -->
+
+
+        </tr>
 
 
         <tr>
@@ -125,26 +117,23 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[3][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox"
-                                                                    id="14{{i}}"
-                                                                    name="14{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
+                -->
+
 
         </tr>
 
 
-
         <tr>
             <td class="th1">Main category</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">Subcategory</td>
@@ -159,15 +148,13 @@
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[4][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='2'"><input type="checkbox"
-                                                                    id="21{{i}}"
-                                                                    name="21{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
+                -->
+
 
         </tr>
 
@@ -177,27 +164,23 @@
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[5][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='2'"><input type="checkbox"
-                                                                    id="22{{i}}"
-                                                                    name="22{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isGrouped}}</td>
+                -->
+
 
         </tr>
 
 
-
-
         <tr>
             <td class="th1">SEO optimalizace</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">SEO</td>
@@ -212,26 +195,22 @@
             <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='3' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='3' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[6][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='3'"><input type="checkbox"
-                                                                    id="31{{i}}"
-                                                                    name="31{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isGrouped}}</td>
+                -->
+
         </tr>
-
-
 
 
         <tr>
             <td class="th1">Email marketing</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">Měsíční správa email marketingu</td>
@@ -246,26 +225,22 @@
             <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='4' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='4' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[7][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='4'"><input type="checkbox"
-                                                                      id="41{{i}}"
-                                                                    name="41{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isGrouped}}</td>
+                -->
+
         </tr>
-
-
 
 
         <tr>
             <td class="th1">Copywriting</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">Tvorba obsahu na blog</td>
@@ -280,25 +255,22 @@
             <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='5' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='5' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[8][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='5'"><input type="checkbox"
-                                                                    id="51{{i}}"
-                                                                    name="51{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isGrouped}}</td>
+                -->
+
         </tr>
-
 
 
         <tr>
             <td class="th1">Influencer marketing</td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
-            <td class="th1">   </td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
+            <td class="th1"></td>
         </tr>
         <tr>
             <td class="th2">Influencer marketing basic</td>
@@ -313,37 +285,35 @@
             <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='6' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='6' && !item.isMonthly">{{item.price / months}} Kč</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1'"><input type="checkbox" [(ngModel)]="isselected[9][i]">
 
-            <!--
-            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isMonthly}}</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isGrouped}}</td>
-            -->
-            <td *ngIf="item.catID.toString().charAt(0)=='6'"><input type="checkbox"
-                                                                    id="61{{i}}"
-                                                                    name="61{{i}}">
-            </td>
+                <!--
+                <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isMonthly}}</td>
+                <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isGrouped}}</td>
+                -->
+
         </tr>
 
 
-    <h1></h1>
+        <h1></h1>
 
 
+        <form action="/action_page.php">
+            <label for="platnost">Platnost od* :</label>
+            <input type="date" [(ngModel)]="from" id="platnost" name="od">
+            <label for="platnost">Platnost do* </label>
+            <input type="date" [(ngModel)]="till" id="platnost" name="do">
+            <input type="submit">
+        </form>
 
-    <form action="/action_page.php">
-        <label for="platnost">Platnost od* :</label>
-        <input type="date" [(ngModel)]="from" id="platnost" name="od">
-        <label for="platnost">Platnost do* </label>
-        <input type="date" [(ngModel)]="till" id="platnost" name="do">
-        <input type="submit">
-    </form>
+        <input id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant"
+               placeholder="Jméno obchodního zástupce*">
+        <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
+        <input name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
 
-    <input id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant" placeholder="Jméno obchodního zástupce*">
-    <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
-    <input name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
+        <h1></h1>
 
-    <h1></h1>
-
-    <button (click)="hide()" id="hidebtn">Done</button>
+        <button (click)="hide()" id="hidebtn">Done</button>
     </table>
 </div>
 
@@ -353,7 +323,6 @@
             Nabídka ID: 69420 <br>
             Odběratel: *Jméno klienta, Firma, telefon, email, adresa*
         </th>
-
 
 
         <tr>
@@ -382,7 +351,6 @@
         </tr>
 
 
-
         <tr>
             <td class="th2">Srovnávače zboží</td>
             <td class="th2">Cena</td>
@@ -399,12 +367,10 @@
         </tr>
 
 
-
         <tr>
             *Cena uvedená je bez DPH 21% <br>
             Nabídka je platná od *{{from}}* do *{{till}}* na období *{{months}}* měsíců
         </tr>
-
 
 
         <td>*Jméno a příjmení obchodního zástupce*: {{reprezentant}} <br></td>

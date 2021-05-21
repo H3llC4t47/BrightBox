@@ -53,6 +53,7 @@ export class AppComponent implements OnInit {
     groupcount: number;
     groupamount: number;
     totalprice: number;
+    isselected:boolean[][];
 
     ngOnInit(): void {
         this.HttpGetRUpdate();
