@@ -48,7 +48,6 @@ export class AppComponent implements OnInit {
     emailreprezentant = '';
     phonereprezentant = '';
 
-    docasna;
     i: number;
     totalprice: number;
 
@@ -72,21 +71,5 @@ export class AppComponent implements OnInit {
         this.global2 = !this.global;
         console.log(this.jsonveci);
     }
-
-    /**
-     * CalculatePrice() {
-     *    for (this.i = 0;this.i < this.jsonveci.items.length ;this.i++) {
-     *        this.docasna = this.jsonveci.items[this.i][0];
-     *        if (true) {
-     *            this.totalprice += this.docasna;
-     *            this.docasna = null;
-     *        }
-     *        else {
-     *            continue;
-     *        }
-     *    }
-     *
-     *   }
-     */
 
 }
