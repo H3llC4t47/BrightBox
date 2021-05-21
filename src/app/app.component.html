@@ -4,23 +4,23 @@
 
 <div *ngIf="global" class="global">
 
-    <div class="input-group">
-        <input id="Jméno klienta" name="Id" type="text" class="in" [(ngModel)]="clientname"
+    <div class="input-group-text">
+        <input id="Jméno klienta" name="JménoKlienta" type="text" class="in" [(ngModel)]="clientname"
                placeholder="Jméno klienta">
-        <input id="Název firmy" name="Name" type="text" class="in" [(ngModel)]="firmname"
+        <input id="Název firmy" name="NázevFirmy" type="text" class="in" [(ngModel)]="firmname"
                placeholder="Název firmy*">
-        <input id="Ulice a ČP" name="Price" type="text" class="in" [(ngModel)]="adress"
+        <input id="Ulice a ČP" name="UliceaČP" type="text" class="in" [(ngModel)]="adress"
                placeholder="Ulice a ČP">
-        <input id="Město a PSČ" name="Studio" type="text" class="in" [(ngModel)]="city"
+        <input id="Město a PSČ" name="MěstoaPSČ" type="text" class="in" [(ngModel)]="city"
                placeholder="Město a PSČ"><br></div>
-    <div class="input-group">
-        <input id="Telefon" name="Id" type="text" class="in" [(ngModel)]="phone" placeholder="Telefon">
-        <input id="Email" name="Name" type="text" class="in" [(ngModel)]="email" placeholder="E-mail*">
-        <input id="IČ" name="Price" type="number" class="in" [(ngModel)]="ic" placeholder="IČ">
-        <input id="DIČ" name="Studio" type="number" class="in" [(ngModel)]="dic" placeholder="DIČ">
+    <div class="input-group-text">
+        <input id="Telefon" name="Telefon" type="text" class="in" [(ngModel)]="phone" placeholder="Telefon">
+        <input id="Email" name="Email" type="text" class="in" [(ngModel)]="email" placeholder="E-mail*">
+        <input id="IČ" name="IČ" type="number" class="in" [(ngModel)]="ic" placeholder="IČ">
+        <input id="DIČ" name="DIČ" type="number" class="in" [(ngModel)]="dic" placeholder="DIČ">
     </div>
     <br>
-    <div class="input-group">
+    <div class="input-group-text">
         <input id="Počet měsíců" name="Id" type="number" class="in" [(ngModel)]="months"
                placeholder="Počet měsíců: ">
     </div>
@@ -337,13 +337,13 @@
         <input type="submit">
     </form>
 
-    <input id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant" placeholder="Jméno obchodního zástupce*">
-    <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
-    <input name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
+    <input class="input-group-text" id="Zástupce" name="Name" type="text" [(ngModel)]="reprezentant" placeholder="Jméno obchodního zástupce*">
+    <input class="input-group-text" name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
+    <input class="input-group-text" name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
 
     <h1></h1>
 
-    <button (click)="hide()" id="hidebtn">Done</button>
+    <button type="button" class="btn btn-danger accept" (click)="hide()" id="hidebtn">Generovat nabídku</button>
     </table>
 </div>
 
