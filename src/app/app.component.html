@@ -42,7 +42,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped">Grouped</td>
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isGrouped}}</td>
@@ -69,7 +68,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped"></td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
@@ -79,20 +77,6 @@
                                                                     id="12{{i}}"
                                                                     name="12{{i}}">
             </td>
-            <!--
-                        <script>
-                            checkVal = function() {
-
-                                catID.forEach(function (ID) {
-
-                                    if (ID.selected) {
-
-                                        totalprice += item.price;
-                                    }
-                                });
-                            }
-                        </script>
-                        -->
                     </tr>
 
 
@@ -110,7 +94,6 @@
                         <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
                         <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
                         <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-                        <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped">Grouped</td>
 
                         <!--
                         <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
@@ -138,7 +121,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
@@ -169,7 +151,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
@@ -188,7 +169,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='2' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='2' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='2'">{{item.isMonthly}}</td>
@@ -220,7 +200,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='3' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='3' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='3' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='3'">{{item.isMonthly}}</td>
@@ -251,7 +230,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='4' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='4' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='4' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='4'">{{item.isMonthly}}</td>
@@ -282,7 +260,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='5' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='5' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='5' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='5'">{{item.isMonthly}}</td>
@@ -312,7 +289,6 @@
             <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='6' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='6' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='6' && item.isGrouped">Grouped</td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='6'">{{item.isMonthly}}</td>
