@@ -71,5 +71,8 @@ export class AppComponent implements OnInit {
         this.global2 = !this.global;
         console.log(this.jsonveci);
     }
+    PocitaniCastky() {
+
+    }
 
 }
