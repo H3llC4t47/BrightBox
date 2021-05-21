@@ -30,6 +30,10 @@ header {
   margin-left: $sideoffset;
 }
 
+td {
+  width: 120%;
+}
+
 .box{
   height: 40px;
   width: 100%;
@@ -88,12 +92,14 @@ footer {
   background-color: rgb(222, 38, 94);
   color: white;
   border: none !important;
+  width: 120%;
 }
 
 .th2 {
   background-color: #c97bac;
   color: white;
   border: none !important;
+  width: 120%;
 }
 
 .mainTable {
