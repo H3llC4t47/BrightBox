@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
     reprezentant = '';
     emailreprezentant = '';
     phonereprezentant = '';
+    totalprice: number;
 
     ngOnInit(): void {
         this.HttpGetRUpdate();
