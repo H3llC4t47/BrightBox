@@ -74,7 +74,7 @@
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isMonthly">{{item.price}} Kč</td>
             <td *ngIf="item.catID.toString().charAt(0)=='1' && !item.isMonthly">{{item.price / months}} Kč</td>
-            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped">Grouped</td>
+            <td *ngIf="item.catID.toString().charAt(0)=='1' && item.isGrouped"></td>
 
             <!--
             <td *ngIf="item.catID.toString().charAt(0)=='1'">{{item.isMonthly}}</td>
