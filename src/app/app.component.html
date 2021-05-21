@@ -39,7 +39,7 @@
             <td class="th2">Cena měsíčně</td>
             <td class="th2"></td>
             <td class="th2"></td>
-        </tr>
+        </tr >
         <tr *ngFor="let item of jsonveci; let i = index">
             <app-bunka [item]="item"></app-bunka>
             <td>{{item.items.isMonthly}}</td>
@@ -249,8 +249,6 @@
     <input name="Email" type="text" [(ngModel)]="emailreprezentant" placeholder="Email">
     <input name="Telefon" type="text" [(ngModel)]="phonereprezentant" placeholder="Telefon">
 
-    <h1></h1>
-
     <button (click)="hide()" id="hidebtn">Done</button>
 </div>
 
@@ -270,7 +268,6 @@
             <td class="th2">Správa a optimalizace reklamních kampaní</td>
             <td class="th2">Cena</td>
             <td class="th2">Cena měsíčně</td>
-            <td class="th2"></td>
             <td class="th2"></td>
         </tr>
         <tr>
